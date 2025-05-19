@@ -1,0 +1,191 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="BiLSTM">
+    <mxGraphModel dx="1000" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Input Tokens -->
+        <mxCell id="2" value="Heart" style="text;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="90" y="20" width="60" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="3" value="is" style="text;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="190" y="20" width="60" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="4" value="not" style="text;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="290" y="20" width="60" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="5" value="enlarged" style="text;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="390" y="20" width="80" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- Embedding Layer Rectangles -->
+        <mxCell id="6" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="60" width="40" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="7" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="60" width="40" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="8" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="60" width="40" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="9" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="60" width="40" height="25" as="geometry"/>
+        </mxCell>
+
+        <!-- Embedding Layer Label -->
+        <mxCell id="10" value="Embedding Layer" style="text;html=1;align=right;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="5" y="60" width="90" height="25" as="geometry"/>
+        </mxCell>
+
+        <!-- Forward LSTM Circles -->
+        <mxCell id="11" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="110" y="110" width="30" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="12" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="210" y="110" width="30" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="13" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="310" y="110" width="30" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="14" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="420" y="110" width="30" height="30" as="geometry"/>
+        </mxCell>
+        <!-- Forward LSTM Label -->
+        <mxCell id="15" value="Forward LSTM" style="text;html=1;align=right;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="5" y="110" width="90" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- Backward LSTM Circles -->
+        <mxCell id="16" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="110" y="170" width="30" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="17" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="210" y="170" width="30" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="18" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="310" y="170" width="30" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="19" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="420" y="170" width="30" height="30" as="geometry"/>
+        </mxCell>
+        <!-- Backward LSTM Label -->
+        <mxCell id="20" value="Backward LSTM" style="text;html=1;align=right;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="5" y="170" width="90" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- LSTM Circle Labels -->
+        <mxCell id="21" value="LSTM" style="text;html=1;fontSize=14;" vertex="1" parent="11">
+          <mxGeometry x="0" y="0" width="30" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="22" value="LSTM" style="text;html=1;fontSize=14;" vertex="1" parent="12">
+          <mxGeometry x="0" y="0" width="30" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="23" value="LSTM" style="text;html=1;fontSize=14;" vertex="1" parent="13">
+          <mxGeometry x="0" y="0" width="30" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="24" value="LSTM" style="text;html=1;fontSize=14;" vertex="1" parent="14">
+          <mxGeometry x="0" y="0" width="30" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="25" value="LSTM" style="text;html=1;fontSize=14;" vertex="1" parent="16">
+          <mxGeometry x="0" y="0" width="30" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="26" value="LSTM" style="text;html=1;fontSize=14;" vertex="1" parent="17">
+          <mxGeometry x="0" y="0" width="30" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="27" value="LSTM" style="text;html=1;fontSize=14;" vertex="1" parent="18">
+          <mxGeometry x="0" y="0" width="30" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="28" value="LSTM" style="text;html=1;fontSize=14;" vertex="1" parent="19">
+          <mxGeometry x="0" y="0" width="30" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- Arrows: Embedding to LSTM -->
+        <mxCell id="29" style="edgeStyle=orthogonalEdgeStyle;endArrow=blockThin;html=1;" edge="1" parent="1" source="6" target="11">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="30" style="edgeStyle=orthogonalEdgeStyle;endArrow=blockThin;html=1;" edge="1" parent="1" source="7" target="12">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="31" style="edgeStyle=orthogonalEdgeStyle;endArrow=blockThin;html=1;" edge="1" parent="1" source="8" target="13">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="32" style="edgeStyle=orthogonalEdgeStyle;endArrow=blockThin;html=1;" edge="1" parent="1" source="9" target="14">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="33" style="edgeStyle=orthogonalEdgeStyle;endArrow=blockThin;html=1;" edge="1" parent="1" source="6" target="16">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="34" style="edgeStyle=orthogonalEdgeStyle;endArrow=blockThin;html=1;" edge="1" parent="1" source="7" target="17">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="35" style="edgeStyle=orthogonalEdgeStyle;endArrow=blockThin;html=1;" edge="1" parent="1" source="8" target="18">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="36" style="edgeStyle=orthogonalEdgeStyle;endArrow=blockThin;html=1;" edge="1" parent="1" source="9" target="19">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Forward LSTM horizontal arrows -->
+        <mxCell id="37" style="endArrow=blockThin;html=1;" edge="1" parent="1" source="11" target="12">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="38" style="endArrow=blockThin;html=1;" edge="1" parent="1" source="12" target="13">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="39" style="endArrow=blockThin;html=1;" edge="1" parent="1" source="13" target="14">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Backward LSTM horizontal arrows -->
+        <mxCell id="40" style="endArrow=blockThin;html=1;" edge="1" parent="1" source="19" target="18">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="41" style="endArrow=blockThin;html=1;" edge="1" parent="1" source="18" target="17">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="42" style="endArrow=blockThin;html=1;" edge="1" parent="1" source="17" target="16">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Forward LSTM to output -->
+        <mxCell id="43" style="endArrow=blockThin;html=1;" edge="1" parent="1" source="11">
+          <mxGeometry x="0" y="1.5" width="0" height="0" relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="44" style="endArrow=blockThin;html=1;" edge="1" parent="1" source="12">
+          <mxGeometry x="0" y="1.5" width="0" height="0" relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="45" style="endArrow=blockThin;html=1;" edge="1" parent="1" source="13">
+          <mxGeometry x="0" y="1.5" width="0" height="0" relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="46" style="endArrow=blockThin;html=1;" edge="1" parent="1" source="14">
+          <mxGeometry x="0" y="1.5" width="0" height="0" relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Backward LSTM to output -->
+        <mxCell id="47" style="endArrow=blockThin;html=1;" edge="1" parent="1" source="16">
+          <mxGeometry x="0" y="1.5" width="0" height="0" relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="48" style="endArrow=blockThin;html=1;" edge="1" parent="1" source="17">
+          <mxGeometry x="0" y="1.5" width="0" height="0" relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="49" style="endArrow=blockThin;html=1;" edge="1" parent="1" source="18">
+          <mxGeometry x="0" y="1.5" width="0" height="0" relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="50" style="endArrow=blockThin;html=1;" edge="1" parent="1" source="19">
+          <mxGeometry x="0" y="1.5" width="0" height="0" relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Concatenate & Flatten label -->
+        <mxCell id="51" value="Concatenate &amp; Flatten" style="text;html=1;align=right;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="5" y="230" width="170" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- Output vector (flattened) -->
+        <mxCell id="52" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="250" width="340" height="20" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
